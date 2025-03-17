@@ -101,4 +101,4 @@ Edjzeck Smulders - Full Stack Developer
 
 ## Licencja
 
-Ten projekt jest dostępny na licencji MIT. Zobacz szczegóły w pliku LICENSE. 
+Ten projekt jest dostępny na licencji MIT. 
