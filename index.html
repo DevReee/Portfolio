@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edjzeck Smulders | Portfolio Programisty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .github-link {
+            width: auto !important;
+            height: 4.5rem;
+            padding: 0 2rem;
+            border-radius: 2.25rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--bg-light);
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .github-link i {
+            margin-right: 0.8rem;
+        }
+        
+        .github-link:hover {
+            background-color: var(--secondary-color);
+            color: var(--text-white);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#home">ES</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Strona główna</a></li>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#skills">Umiejętności</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Edjzeck Smulders</h1>
+                    <h2 class="typewriter-text">Deweloper Aplikacji Webowych</h2>
+                    <p>Tworzę nowoczesne i funkcjonalne aplikacje, które spełniają oczekiwania klientów.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">Zobacz projekty</a>
+                        <a href="#contact" class="btn secondary-btn">Kontakt</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image-container">
+                        <div class="profile-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>O mnie</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-container">
+                        <div class="about-img"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Kim jestem?</h3>
+                    <p>Nazywam się Edjzeck Smulders i jestem programistą z pasją do tworzenia innowacyjnych rozwiązań technologicznych. Specjalizuję się w tworzeniu aplikacji webowych, które są nie tylko funkcjonalne, ale również przyjazne dla użytkownika.</p>
+                    <p>Moje podejście do programowania koncentruje się na rozwiązywaniu rzeczywistych problemów biznesowych, dbając jednocześnie o wysoką jakość kodu i nowoczesny design. Jestem zawsze otwarty na nowe technologie i ciągle rozwijam swoje umiejętności.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Imię i nazwisko:</span>
+                            <span class="info-value">Edjzeck Smulders</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">E-mail:</span>
+                            <span class="info-value">kontakt@edjzecksmulders.xyz</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Stanowisko:</span>
+                            <span class="info-value">Full Stack Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Lokalizacja:</span>
+                            <span class="info-value">Legnica, Polska</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary-btn download-cv">Pobierz CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Umiejętności</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-content">
+                <div class="technical-skills">
+                    <h3>Umiejętności techniczne</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <h4>React</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <h4>Node.js</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>SQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Git</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <h3>Umiejętności miękkie</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon"><i class="fas fa-users"></i></div>
+                            <h4>Praca zespołowa</h4>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon"><i class="fas fa-tasks"></i></div>
+                            <h4>Zarządzanie projektami</h4>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+                            <h4>Komunikacja</h4>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h4>Rozwiązywanie problemów</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projekty</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Wszystkie</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="photo/inw.png" alt="Program Inwentaryzacji">
+                    </div>
+                    <div class="project-info">
+                        <h3>Program Inwentaryzacji</h3>
+                        <p>Kompleksowe rozwiązanie do zarządzania sprzętem i zasobami firmowymi, ułatwiające proces inwentaryzacji.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://inw-demo.vercel.app/login.html" class="project-link" target="_blank"><i class="fas fa-eye"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="photo/ekanar.png" alt="eKanar.pl">
+                    </div>
+                    <div class="project-info">
+                        <h3>eKanar.pl</h3>
+                        <p>Aplikacja webowa na telefony do zgłaszania kontrolera biletów działająca na zasadzie Yanosik. Użytkownicy zgłaszają aktualną lokalizację kontrolera biletów.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontakt</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Skontaktuj się ze mną</h3>
+                    <p>Jeśli jesteś zainteresowany współpracą lub masz jakiekolwiek pytania, nie wahaj się ze mną skontaktować.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>kontakt@edjzecksmulders.xyz</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h4>Telefon</h4>
+                                <p>+48 664 473 532</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <h4>Lokalizacja</h4>
+                                <p>Legnica, Polska</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/DevReee" class="social-link github-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/meoaolep" method="POST" accept="application/json">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Temat" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Wiadomość" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">ES</a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Edjzeck Smulders. Wszelkie prawa zastrzeżone.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Strona główna</a>
+                    <a href="#about">O mnie</a>
+                    <a href="#skills">Umiejętności</a>
+                    <a href="#projects">Projekty</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html> 
