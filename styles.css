@@ -439,6 +439,14 @@ section {
 
 /* Dodajemy fallback dla urządzeń mobilnych */
 @media (max-width: 768px) {
+    .profile-image {
+        background: none;
+    }
+    
+    .profile-img-fallback {
+        display: block;
+    }
+
     .about-img {
         background: none;
         height: auto;
