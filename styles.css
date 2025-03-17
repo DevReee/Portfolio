@@ -41,7 +41,7 @@ body::after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url('./photo/ja.jpg') url('./photo/jag.jpg') url('./photo/inw.png') url('./photo/ekanar.png');
+    content: url('./photo/ja.jpg') url('./photo/jag.jpg') url('./photo/inw.png') url('./photo/ekanar.png') url('./photo/id.png');
 }
 
 ul {
@@ -1115,4 +1115,15 @@ section {
 .submitting .primary-btn {
     background-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     transition: all 0.3s ease;
+}
+
+/* Specjalny efekt dla projektu generatora identyfikatorów */
+.project-card[data-category="tools"]:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(76, 110, 245, 0.15);
+}
+
+.project-card[data-category="tools"] .project-tech span {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: var(--accent-color);
 } 
