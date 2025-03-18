@@ -1,0 +1,25 @@
+# robots.txt dla edjzecksmulders.xyz
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.edjzecksmulders.xyz/sitemap.xml
+
+# Nie indeksuj tych folderów/plików
+Disallow: /admin/
+Disallow: /private/
+Disallow: /dev/
+Disallow: /.git/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.json$
+
+# Pozwól Googlebot na indeksowanie całości
+User-agent: Googlebot
+Allow: /
+
+# Pozwól Bingbot na indeksowanie całości
+User-agent: Bingbot
+Allow: / 

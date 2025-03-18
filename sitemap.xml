@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- Strona główna -->
+    <url>
+        <loc>https://www.edjzecksmulders.xyz/</loc>
+        <lastmod>2023-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Sekcje strony głównej -->
+    <url>
+        <loc>https://www.edjzecksmulders.xyz/#home</loc>
+        <lastmod>2023-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.edjzecksmulders.xyz/#about</loc>
+        <lastmod>2023-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.edjzecksmulders.xyz/#skills</loc>
+        <lastmod>2023-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.edjzecksmulders.xyz/#projects</loc>
+        <lastmod>2023-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.edjzecksmulders.xyz/#contact</loc>
+        <lastmod>2023-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Projekty indywidualne (jeśli mają odrębne strony) -->
+    <url>
+        <loc>https://inw-demo.vercel.app/login.html</loc>
+        <lastmod>2023-11-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset> 

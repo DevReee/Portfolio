@@ -1,5 +1,8 @@
 // Czekaj, aż dokument zostanie w pełni załadowany
 document.addEventListener('DOMContentLoaded', function() {
+    // Dodanie atrybutu title do strony dla lepszego SEO
+    document.title = "Edjzeck Smulders | Full Stack Developer | JavaScript, React, Node.js | Portfolio Programisty";
+
     // Elementy DOM
     const header = document.querySelector('.header');
     const burgerMenu = document.querySelector('.burger-menu');
@@ -45,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     burgerMenu.addEventListener('click', function() {
         this.classList.toggle('active');
         navLinks.classList.toggle('active');
+        document.body.classList.toggle('menu-open'); // Blokowanie przewijania podczas otwartego menu
     });
 
     // Zamykanie menu mobilnego po kliknięciu w link
@@ -52,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', function() {
             burgerMenu.classList.remove('active');
             navLinks.classList.remove('active');
+            document.body.classList.remove('menu-open');
         });
     });
 
@@ -306,4 +311,110 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Wywołaj funkcję na start, aby pokazać widoczne elementy
     revealOnScroll();
+
+    // Dodanie strukturalnych danych schema.org dla Portfolio
+    function addPortfolioJsonLd() {
+        const projects = [];
+        
+        // Pobieranie danych o projektach z DOM
+        document.querySelectorAll('.project-card').forEach(card => {
+            const title = card.querySelector('h3').textContent;
+            const description = card.querySelector('p').textContent;
+            const imgSrc = card.querySelector('img').src;
+            const imgAlt = card.querySelector('img').alt;
+            const techSpans = card.querySelectorAll('.project-tech span');
+            const technologies = [];
+            
+            techSpans.forEach(span => {
+                technologies.push(span.textContent);
+            });
+            
+            const demoLink = card.querySelector('.project-link')?.href || '';
+            
+            projects.push({
+                "@type": "CreativeWork",
+                "name": title,
+                "description": description,
+                "image": imgSrc,
+                "keywords": technologies.join(', '),
+                "url": demoLink
+            });
+        });
+        
+        // Tworzenie i dodawanie znacznika JSON-LD
+        const jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "Collection",
+            "name": "Portfolio projektów Edjzeck Smulders",
+            "description": "Kolekcja projektów programistycznych stworzonych przez Edjzeck Smulders, Full Stack Developera specjalizującego się w JavaScript, React i Node.js.",
+            "creator": {
+                "@type": "Person",
+                "name": "Edjzeck Smulders",
+                "jobTitle": "Full Stack Developer",
+                "url": "https://www.edjzecksmulders.xyz"
+            },
+            "hasPart": projects
+        };
+        
+        const scriptTag = document.createElement('script');
+        scriptTag.type = 'application/ld+json';
+        scriptTag.textContent = JSON.stringify(jsonLd);
+        document.head.appendChild(scriptTag);
+    }
+    
+    // Wywołanie funkcji dodającej strukturalne dane
+    addPortfolioJsonLd();
+    
+    // Poprawienie dostępności strony
+    function enhanceAccessibility() {
+        // Dodawanie atrybutów aria-label do ikon bez tekstu
+        document.querySelectorAll('a i, button i').forEach(icon => {
+            const parentEl = icon.parentElement;
+            if (!parentEl.getAttribute('aria-label') && parentEl.textContent.trim() === '') {
+                const iconClass = icon.className;
+                let label = '';
+                
+                if (iconClass.includes('fa-github')) label = 'GitHub profil';
+                else if (iconClass.includes('fa-eye')) label = 'Zobacz demo projektu';
+                else if (iconClass.includes('fa-arrow-up')) label = 'Przewiń na górę strony';
+                else if (iconClass.includes('fa-chevron-down')) label = 'Przewiń do sekcji o mnie';
+                
+                if (label) {
+                    parentEl.setAttribute('aria-label', label);
+                }
+            }
+        });
+        
+        // Poprawienie nawigacji klawiaturowej
+        document.querySelectorAll('a, button, input, textarea').forEach(el => {
+            if (!el.getAttribute('tabindex')) {
+                el.setAttribute('tabindex', '0');
+            }
+        });
+    }
+    
+    // Wywołanie funkcji poprawiającej dostępność
+    enhanceAccessibility();
+});
+
+// Funkcje dla lepszej indeksacji przez wyszukiwarki
+function optimizeForKeyword(keyword) {
+    // Dodajemy ukryty nagłówek dla wyszukiwarek
+    const seoHeader = document.createElement('h2');
+    seoHeader.style.position = 'absolute';
+    seoHeader.style.overflow = 'hidden';
+    seoHeader.style.clip = 'rect(0 0 0 0)';
+    seoHeader.style.height = '1px';
+    seoHeader.style.width = '1px';
+    seoHeader.style.margin = '-1px';
+    seoHeader.style.padding = '0';
+    seoHeader.style.border = '0';
+    seoHeader.textContent = keyword;
+    
+    document.querySelector('main').prepend(seoHeader);
+}
+
+// Optymalizacja dla najważniejszych słów kluczowych
+document.addEventListener('DOMContentLoaded', function() {
+    optimizeForKeyword('Edjzeck Smulders - Programista, Full Stack Developer, JavaScript Developer');
 }); 
